@@ -216,5 +216,54 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# ==============================================================================
+# Exclude large, raw genomic data
+# ==============================================================================
+# Raw sequencing reads
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Alignments and binary index files
+*.bam
+*.bai
+*.cram
+*.crai
+*.sam
+
+# Variant calls & genomic intervals
+*.vcf
+*.vcf.gz
+*.tbi
+*.bcf
+
+# Large archives and compressed packages
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+
+# Bioimaging & Microscopy
+*.tiff
+*.tif
+*.ndpi
+*.czi
+*.lif
+
+# Local pipeline data, scratch & execution caches
+data/raw/
+results/
+scratch/
+work/
+.snakemake/
+.nextflow/
+.nextflow.log*
+
+# Container runtime caches
+*.sif
+*.img
+
 # Streamlit
 .streamlit/secrets.toml
